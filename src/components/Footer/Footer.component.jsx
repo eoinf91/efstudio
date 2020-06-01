@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 // Styles
 import './Footer.styles.scss';
@@ -33,24 +34,24 @@ const Footer = () => (
             <h3>We have proudly worked with some amazing brands:</h3>
             <div className="client-logo-container">
                 <div className="client-logo">
-                    <a href='https://kerry.com' target='_blank' rel='noreferrer noopener'>
+                    <OutboundLink href='https://kerry.com' target='_blank' rel='noreferrer noopener'>
                         <img src={Kerry} alt='Kerry' />
-                    </a>
+                    </OutboundLink>
                 </div>
                 <div className="client-logo">
-                    <a href='https://giorgisjourney.com' target='_blank' rel='noreferrer noopener'>
+                    <OutboundLink href='https://giorgisjourney.com' target='_blank' rel='noreferrer noopener'>
                         <img src={GA} alt='Giorgis Journey' />
-                    </a>
+                    </OutboundLink>
                 </div>
                 <div className="client-logo">
-                    <a href='https://nphope.com' target='_blank' rel='noreferrer noopener'>
+                    <OutboundLink href='https://nphope.com' target='_blank' rel='noreferrer noopener'>
                         <img src={NP} alt='Neuropraxis' />
-                    </a>
+                    </OutboundLink>
                 </div>
                 <div className="client-logo">
-                    <a href='https://tonisity.com' target='_blank' rel='noreferrer noopener'>
+                    <OutboundLink href='https://tonisity.com' target='_blank' rel='noreferrer noopener'>
                         <img src={Tonisity} alt='Tonisity' />
-                    </a>
+                    </OutboundLink>
                 </div>
             </div>
         </div>

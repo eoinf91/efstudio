@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 // Styles
 import './Header.styles.scss';
@@ -34,15 +35,15 @@ const Header = () => (
             </Link>
         </nav>
         <div className="social-icons">
-            <a href="https://www.instagram.com/ef_studio_ie/" target="_blank" rel="noopener noreferrer">
+            <OutboundLink href="https://www.instagram.com/ef_studio_ie/" target="_blank" rel="noopener noreferrer">
                 <img src={InstagramLogo} alt="Instagram" />
-            </a>
-            <a href="https://www.facebook.com/efstudio.ire" target="_blank" rel="noopener noreferrer">
+            </OutboundLink>
+            <OutboundLink href="https://www.facebook.com/efstudio.ire" target="_blank" rel="noopener noreferrer">
                 <img src={FBLogo} alt="Facebook" />
-            </a>
-            <a href="https://www.linkedin.com/in/eoinbfeely/" target="_blank" rel="noopener noreferrer">
+            </OutboundLink>
+            <OutboundLink href="https://www.linkedin.com/in/eoinbfeely/" target="_blank" rel="noopener noreferrer">
                 <img src={LinkedInLogo} alt="LinkedIn" />
-            </a>
+            </OutboundLink>
         </div>
     </header>
 )

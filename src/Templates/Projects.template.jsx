@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -20,7 +21,7 @@ const ProjectsTemplate = ({ data }) => (
                 }
                 <div className="project-text">
                     <h4>{data.markdownRemark.frontmatter.title}</h4>
-                    <p className="sub">See the live site: <a href={data.markdownRemark.frontmatter.liveUrl} target="_blank" rel="noopener noreferrer">{data.markdownRemark.frontmatter.liveUrl}</a></p>
+                    <p className="sub">See the live site: <OutboundLink href={data.markdownRemark.frontmatter.liveUrl} target="_blank" rel="noopener noreferrer">{data.markdownRemark.frontmatter.liveUrl}</OutboundLink></p>
                     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
                     <div className="services">
                         <h4>Services Provided</h4>
