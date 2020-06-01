@@ -26,7 +26,7 @@ const WorkPage = ({ data }) => {
                         ))
                     }
                 </div>
-                <div className="other-projects">
+                {/* <div className="other-projects">
                     <h4>Take a look at some of our other projects</h4>
                     <ul>
                         <li>
@@ -48,7 +48,7 @@ const WorkPage = ({ data }) => {
                             <p>Project</p>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </Layout>
     )
