@@ -1,0 +1,56 @@
+@import '../../Common.styles.scss';
+
+.package-overview{
+    text-align: center;
+
+    .package-overview-container{
+        padding: 40px 0px;
+        border-bottom: 1px solid $ef-studio-black;
+
+        &:first-child{
+            padding: 10px 0px 40px;
+        }
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        .col-item{
+            margin: 40px 0px;
+
+            &:first-child{
+                margin: 0px;
+            }
+        }
+    }
+
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .package-overview{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .package-overview-container{
+            width: calc(100% / 3);
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: none;
+            border-right: 1px solid $ef-studio-black;
+
+            &:first-child{
+                padding: 20px 40px;
+            }
+
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+}

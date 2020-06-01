@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1366px){
+    .side-heading{
+        position: absolute;
+        right: -240px;
+        top: 130px;
+        transform: rotate(90deg);
+        width: 300px;
+        
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    .side-heading{
+        right: -380px;
+
+    }
+}

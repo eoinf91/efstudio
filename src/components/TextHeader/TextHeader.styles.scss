@@ -1,0 +1,22 @@
+@import '../../Common.styles.scss';
+
+.text-header{
+    padding: 100px 100px 20px 20px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px){
+    .text-header{
+        padding: 130px 20px 80px;
+        text-align: center;
+        width: 450px;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    .text-header{
+        width: 700px;
+        padding: 150px 20px 120px;
+    }
+}
