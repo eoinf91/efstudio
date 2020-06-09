@@ -3,9 +3,11 @@ module.exports = {
     title: `EF Studio`,
     description: `Web design and development solutions for your business.`,
     author: `@efstudio`,
+    siteUrl: `https://eoinfeely.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
